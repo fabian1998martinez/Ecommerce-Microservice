@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa de Instalación Eléctrica y Paneles Solares</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Enlace a tus estilos CSS personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#nosotros">Sobre Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contáctanos</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main class="container mt-5">
+    <section id="inicio" class="mb-5">
+        <h1>Bienvenido a nuestra empresa de instalación eléctrica y paneles solares</h1>
+        <p class="lead">¡Somos expertos en proporcionar soluciones energéticas sostenibles para tu hogar o negocio!</p>
+    </section>
+
+    <section id="nosotros" class="mb-5">
+        <h2>Sobre Nosotros</h2>
+        <p>Aquí puedes escribir una breve descripción de tu empresa y su misión.</p>
+    </section>
+
+    <section id="servicios" class="mb-5">
+        <h2>Nuestros Servicios</h2>
+        <ul>
+            <li>Instalación eléctrica residencial y comercial</li>
+            <li>Instalación de sistemas de paneles solares</li>
+            <li>Asesoramiento en eficiencia energética</li>
+            <li>Mantenimiento y reparación de instalaciones eléctricas</li>
+        </ul>
+    </section>
+
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" class="form-control" id="correo" name="correo" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+</main>
+
+<footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+        <p>Derechos de autor © 2024. Empresa de Instalación Eléctrica y Paneles Solares.</p>
+    </div>
+</footer>
+
+<!-- Enlace a Bootstrap JS y jQuery (necesario para el funcionamiento de Bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
