@@ -2,14 +2,16 @@ server:
   port: 8081
 
 spring:
+  application:
+    name: config-server
   cloud:
     config:
       server:
         git:
           uri: https://github.com/fabian1998martinez/Ecommerce-Microservice.git
-        searchPaths: config-data
-        username: ${GIT_USER}
-        password: ${git_PASSWORD}
+          search-paths: config-data
+          username: ${GIT_USER}
+          password: ${GIT_PASSWORD}
   security:
     user:
       name: root
