@@ -7,7 +7,7 @@ spring:
       server:
         git:
           uri: https://github.com/fabian1998martinez/Ecommerce-Microservice.git
-        searchPath: config-data
+        searchPaths: config-data
         username: ${GIT_USER}
         password: ${git_PASSWORD}
   security:
